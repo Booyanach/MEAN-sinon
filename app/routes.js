@@ -16,7 +16,7 @@ define([
 
         $routeProvider
             .when('/', route.resolve('helloWorld'))
-            // .when('/chart', route.resolve('chart'))
+            .when('/chart', route.resolve('chart'))
             .otherwise({ redirectTo: '/' });
     }]);
 

@@ -8,7 +8,6 @@ define([
 
             delegate.compile = function() {
                 return function(scope, elem, attrs) {
-                    console.log(scope, elem, attrs);
                     scope.tClass = 'red';
                     controller.apply(delegate, arguments);
                 };

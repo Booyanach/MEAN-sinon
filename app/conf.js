@@ -15,11 +15,13 @@
         'directivesModule': './directives/module',
         'controllersModule': './controllers/module',
 
-        // Controllers - Add all controllers bellow this line
-
         // Directives - Add all directives bellow this line
+        'chartDirective': './directives/chartDirective',
+        'svDirectiveTools': './directives/svDirectiveTools',
+        'barsChartDirective': './directives/barsChartDirective',
         'helloWorldDirective': './directives/helloWorldDirective',
         'customTableDirective': './directives/customTableDirective',
+        'blueBarsChartDirective': './directives/blueBarsChartDirective',
 
         // Services - Add all services bellow this line
         'routeResolver': './services/routeResolver',

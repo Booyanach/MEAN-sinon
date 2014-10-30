@@ -29,6 +29,10 @@ app.get('/data', function(req, res) {
     res.json(data);
 });
 
+app.get('/d3req', function(req, res) {
+    res.json(d3Arr);
+});
+
 app.listen(8080);
 
 console.log('Express listening on port 8080');
@@ -71,4 +75,24 @@ var data = [{
             total: 9.9956
         }
     ]
-}];
+}],
+d3Arr = [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    90,
+    80,
+    70,
+    60,
+    50,
+    40,
+    30,
+    20,
+    10
+];

@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+}
+
+th {
+    text-align: left;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+tr.footer {
+    background-color: #efefef;
+}
+
+td {
+    text-align: left;
+}
+
+main {
+    margin-left: 15%;
+    margin-right:15%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+}
+
+bars-chart {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+loader {
+    background:url('/images/loader.gif') no-repeat 50% 50% #FFFFFF;
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.divider {
+    width: 100%;
+    background-color: #818181;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: left;
+    padding: 5px 15px ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+}
+
+.directive-text {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    background-color: #454545;
+    color: white;
+    border: 5px solid #212121;
+    padding: 5px 15px;
+    border-top-width: 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+li.list-group-item:hover {
+    cursor: pointer;
+    background-color: #F6F6F6;
+}
+
+.red thead{
+    color: white;
+    background-color:#F25E5E;
+}

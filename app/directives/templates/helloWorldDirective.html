@@ -1,0 +1,48 @@
+<h2>
+    Directive example
+</h2>
+<br/>
+<table class="table table-bordered table-striped {{tClass}}">
+    <thead>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                City
+            </td>
+            <td>
+                Date
+            </td>
+            <td>
+                Products
+            </td>
+            <td>
+                Total
+            </td>
+        </tr>
+    </thead>
+    <tbody ng-repeat="user in directive">
+        <tr>
+            <td>
+                {{user.name}}
+            </td>
+            <td>
+                {{user.city}}
+            </td>
+            <td>
+                {{user.joined}}
+            </td>
+            <td>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="product in user.orders">
+                        <span class="badge">{{product.total}}£</span> {{product.product}}
+                    </li>
+                </ul>
+            </td>
+            <td>
+                {{user.orderTotal}}£
+            </td>
+        </tr>
+    </tbody>
+</table>

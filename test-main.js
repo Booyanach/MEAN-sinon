@@ -1,10 +1,8 @@
 var testPaths = {
     // Controllers
-    'customersControllersTest': '../test/controllers/customersControllersTest',
+    'helloWorldControllerTest': '../test/controllers/helloWorldControllerTest',
     // Services
-    'customersFactoryTest': '../test/services/customersFactoryTest',
     // Directives
-    'barsChartDirectiveTest': '../test/directives/barsChartDirectiveTest',
 },  tests = Object.keys(window.__karma__.files).filter(function(file) {
     return (/(spec|Test)\.js$/i.test(file));
 }).map(function(test) {
@@ -30,6 +28,7 @@ var testPaths = {
     // Controllers
     'testController': './controllers/testController',
     'ordersController': './controllers/ordersController',
+    'helloWorldController': './controllers/helloWorldController',
     'allordersController': './controllers/allordersController',
     'customersController': './controllers/customersController',
 
@@ -38,6 +37,8 @@ var testPaths = {
     'blueBarChartDirective': './directives/blueBarsChartDirective',
     'chartDirective': './directives/chartDirective',
     'svDirectiveTools': './directives/svDirectiveTools',
+    'customTableDirective': './directives/customTableDirective',
+    'helloWorldDirective': './directives/helloWorldDirective',
 
     // Templates
     'templateTools': './directives/templates/templateTools',
@@ -46,13 +47,13 @@ var testPaths = {
     // Services
     'testService': './services/testService',
     'routeResolver': './services/routeResolver',
-    'customersFactory': './services/customersFactory',
+    'helloWorldService': './services/helloWorldService',
 
     // Mocks
     'serviceModuleMock': '../test/mocks/servicesModuleMock',
     'controllerModuleMock': '../test/mocks/controllersModuleMock',
     'directivesModuleMock': '../test/mocks/directivesModuleMock',
-    'customersFactoryMock': '../test/mocks/customersFactoryMock',
+    'helloWorldServiceMock': '../test/mocks/helloWorldServiceMock',
 };
 
 // We're extending the paths object with the elements in testPaths

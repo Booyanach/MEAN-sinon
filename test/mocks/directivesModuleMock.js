@@ -11,7 +11,7 @@ define('directivesModuleMock', [], function() {
         var module = ng.module('app.directives', []);
         module.register = {
             directive: module.directive,
-            decorator: module.decorator
+            decorator: module.directive
         };
         return module;
     });

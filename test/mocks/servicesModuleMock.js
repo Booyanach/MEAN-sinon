@@ -10,12 +10,8 @@ define('serviceModuleMock', [], function() {
         'use strict';
         var services = ng.module('app.services', []);
         services.register = {
-            factory: function() {
-                return services.factory(arguments);
-            },
-            service: function() {
-                return services.service(arguments);
-            }
+            factory: services.factory,
+            service: services.service
         };
         return services;
     });

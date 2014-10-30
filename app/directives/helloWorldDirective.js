@@ -21,7 +21,5 @@ define([
             controllerAs: 'directive'
         };
     };
-
     directives.register.directive('helloWorld', helloWorld);
-
 });

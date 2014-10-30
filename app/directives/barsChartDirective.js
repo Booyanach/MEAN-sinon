@@ -1,8 +1,7 @@
 define([
     'directivesModule',
-    'svDirectiveTools',
     'chartDirective'
-], function (directives, sv) {
+], function (directives) {
 
     function barsChart ($parse) {
 
@@ -47,7 +46,7 @@ define([
                             d3.select(this).style('fill', checkFill(d));
                         })
                     .on('mouseout', function(d) {
-                            d3.select(this).style('fill', checkFill(d));
+                            d3.select(this).style('fill', config.color);
                         })
                         .attr('width', function(d) { return d + '%'; })
                         .transition().ease('elastic')
@@ -80,14 +79,15 @@ define([
             scope.$watch('data', dataWatch);
         };
 
-        return sv.extend({
+        return {
+            restrict: 'E',
             require: [
-            '?chart'
+            // '?chart'
             ],
             templateUrl: 'app/directives/templates/barChart.html',
             scope: {data: '=chartData'},
             link: barLink
-        });
+        };
     }
 
     directives.register.directive('barsChart', barsChart);

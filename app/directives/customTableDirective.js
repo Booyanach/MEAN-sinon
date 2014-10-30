@@ -12,6 +12,7 @@ define([
                     controller.apply(delegate, arguments);
                 };
             };
+            console.log($delegate);
         return $delegate;
     };
 

@@ -17,7 +17,6 @@
 
         // Directives - Add all directives bellow this line
         'chartDirective': './directives/chartDirective',
-        'svDirectiveTools': './directives/svDirectiveTools',
         'barsChartDirective': './directives/barsChartDirective',
         'helloWorldDirective': './directives/helloWorldDirective',
         'customTableDirective': './directives/customTableDirective',
